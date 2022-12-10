@@ -1,474 +1,559 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="favi icon" type="image" href="Images/MovieFinder.png">
 
-        <style>
-          body{
+  <head>
 
-    background-image: url("/Images/bg_image.jpg");
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-}
+    <link rel="favi icon" type="image" href="Images/MovieFinder.png">
 
-form{
+    <style>
 
-    width: 400px;
+      body {
 
-    margin: 0 auto;
+        background-image: url("/Images/bg_image.jpg");
 
-}
+      }
 
-#movie_result{
+      form {
 
-    content: url("/Images/no_result.gif");
+        width: 400px;
 
-    visibility: hidden;
+        margin: 0 auto;
 
-    width: 500px;
+      }
 
-    margin: 0 auto;
+      #movie_result {
 
-    margin-top: 20px;
+        content: url("/Images/no_result.gif");
 
-}
+        visibility: hidden;
 
-#web-logo{
+        width: 500px;
 
-    content: url("/Images/MovieFinder.png");
+        margin: 0 auto;
 
-    margin-left: 80px;
+        margin-top: 20px;
 
-    width: 300px;
+      }
 
-    height:300px;
+      #web-logo {
 
-}
+        content: url("/Images/MovieFinder.png");
 
-table{
+        margin-left: 80px;
 
-    border:2px solid black
+        width: 300px;
 
-}
+        height: 300px;
 
-td{
+      }
 
-    background-color: rgb(213, 238, 180);
+      table {
 
-}
+        border: 2px solid black
 
-#image-data{
+      }
 
-    background-color: white;
+      td {
 
-}
+        background-color: rgb(213, 238, 180);
 
-th{
+      }
 
-    background-color: rgb(146, 190, 105);
+      #image-data {
 
-}
+        background-color: white;
 
-#movie-table{
+      }
 
-    margin:0 auto;
+      th {
 
-    margin-top: 30px;
+        background-color: rgb(146, 190, 105);
 
-}
+      }
 
-form button{
+      #movie-table {
 
-    width: 100px;
+        margin: 0 auto;
 
-    height: 40px;
+        margin-top: 30px;
 
-    color: white;
+      }
 
-    cursor: pointer;
+      form button {
 
-    margin-left: 180px;
+        width: 100px;
 
-    border-radius: 15px;
+        height: 40px;
 
-    outline: none;
+        color: white;
 
-    background-color: #F64C72;
+        cursor: pointer;
 
-    margin-top: 5%;
+        margin-left: 180px;
 
-    box-shadow: 0 5px #999;
+        border-radius: 15px;
 
-}
+        outline: none;
 
-form input{
+        background-color: #F64C72;
 
-    width: 450px;
+        margin-top: 5%;
 
-    height: 40px;
+        box-shadow: 0 5px #999;
 
-    margin: 0 auto;
+      }
 
-    outline: none;
+      form input {
 
-    text-align: center;
+        width: 450px;
 
-    font-size: 20px;
+        height: 40px;
 
-    border-radius:8px;
+        margin: 0 auto;
 
-}
+        outline: none;
 
-#movie-details{
+        text-align: center;
 
-    text-align: left;
+        font-size: 20px;
 
-}
+        border-radius: 8px;
 
-#movie_details{
+      }
 
-    margin: 0 auto;
+      #movie-details {
 
-}
+        text-align: left;
 
-caption{
+      }
 
-    font-family: "Verdana",sans-serif,monospace,"Aerial Black","Lucida Console";
+      #movie_details {
 
-    font-size: 20px;
+        margin: 0 auto;
 
-}
+      }
 
-/* Extra small devices (phones, 600px and down) */
+      caption {
 
-@media only screen and (max-width: 600px) {
+        font-family: "Verdana", sans-serif, monospace, "Aerial Black", "Lucida Console";
 
-        form input{
+        font-size: 20px;
 
-            width: 215px;
+      }
 
-            height: 40px;
+      /* Extra small devices (phones, 600px and down) */
 
-            margin: 0 auto;
+      @media only screen and (max-width: 600px) {
 
-            outline: none;
+        form input {
 
-            text-align: center;
+          width: 215px;
 
-            font-family: "Verdana",sans-serif,monospace,"Aerial Black","Lucida Console";
+          height: 40px;
 
-            font-size: 15px;
+          margin: 0 auto;
 
-            text-align: center;
+          outline: none;
 
-            border-radius:8px;
+          text-align: center;
+
+          font-family: "Verdana", sans-serif, monospace, "Aerial Black", "Lucida Console";
+
+          font-size: 15px;
+
+          text-align: center;
+
+          border-radius: 8px;
 
         }
 
-        form button{
+        form button {
 
-            width: 80px;
+          width: 80px;
 
-            height: 30px;
+          height: 30px;
 
-            color: white;
+          color: white;
 
-            cursor: pointer;
+          cursor: pointer;
 
-            margin-left: 95px;
+          margin-left: 95px;
 
-            border-radius: 15px;
+          border-radius: 15px;
 
-            outline: none;
+          outline: none;
 
-            background-color: #F64C72;
+          background-color: #F64C72;
 
-            margin-top: 2%;
+          margin-top: 2%;
 
-            box-shadow: 0 5px #999;
-
-        }
-
-        #web-logo{
-
-            content: url("/Images/MovieFinder.png");
-
-            margin-left: 25px;
-
-            width: 190px;
-
-            height:190px;
+          box-shadow: 0 5px #999;
 
         }
 
-        #image-data{
+        #web-logo {
 
-            width: 100px;
+          content: url("/Images/MovieFinder.png");
 
-            height: 100px;
+          margin-left: 25px;
 
-        }
+          width: 190px;
 
-        #movie_result{
-
-            content: url("/Images/no_result.gif");
-
-            visibility: hidden;
-
-            width: 230px;
-
-            margin: 0 auto;
-
-            margin-top: 20px;
+          height: 190px;
 
         }
 
-        table{
+        #image-data {
 
-            border:2px solid black;
+          width: 100px;
 
-        }
-
-        td{
-
-            background-color: rgb(213, 238, 180);
+          height: 100px;
 
         }
 
-        th{
+        #movie_result {
 
-            background-color: rgb(146, 190, 105);
+          content: url("/Images/no_result.gif");
+
+          visibility: hidden;
+
+          width: 230px;
+
+          margin: 0 auto;
+
+          margin-top: 20px;
 
         }
 
-}  
-        </style>
-        <script>
-            function find_movie(){
+        table {
 
-    var movie_name = document.getElementById("movie_name").value;
+          border: 2px solid black;
 
-    if(movie_name==""){
+        }
 
-        alert("Please Enter the Movie Name");
+        td {
 
-        showResult(false);
+          background-color: rgb(213, 238, 180);
 
-    }
+        }
 
-    else{
+        th {
 
-    	httpRequest = new XMLHttpRequest();
+          background-color: rgb(146, 190, 105);
 
-        url = "https://www.omdbapi.com/?t="+movie_name+"&apikey=333e06b5";
+        }
 
-        httpRequest.open("GET",url);
+      }
 
-        httpRequest.send();
+    </style>
 
-        httpRequest.onreadystatechange = 
+    <script>
 
-            function(){
+      function find_movie() {
 
-                if(this.readyState == 4 && this.status == 200){
+        var movie_name = document.getElementById("movie_name").value;
 
-                    movie_data = JSON.parse(this.responseText);
+        if (movie_name == "") {
 
-                    movie_poster = movie_data.Poster;
+          alert("Please Enter the Movie Name");
 
-                    response = movie_data.Response;
+          showResult(false);
 
-                    if(response=="True" && movie_poster!='N/A'){
+        } else {
 
-                        set_data(movie_data,movie_poster);
+          httpRequest = new XMLHttpRequest();
 
-                    }
+          url = "https://www.omdbapi.com/?t=" + movie_name + "&apikey=333e06b5";
 
-                    else if(response=="True" && movie_poster=='N/A'){
+          httpRequest.open("GET", url);
 
-                        alert("Movie found but Poster is not available");
+          httpRequest.send();
 
-                        set_data(movie_data,"/Images/no_poster.gif");
+          httpRequest.onreadystatechange = function() {
 
-                    }
+            if (this.readyState == 4 && this.status == 200) {
 
-                    else{
+              movie_data = JSON.parse(this.responseText);
 
-                        showResult(false);
+              movie_poster = movie_data.Poster;
 
-                    }
+              response = movie_data.Response;
 
-                }
+              if (response == "True" && movie_poster != 'N/A') {
+
+                set_data(movie_data, movie_poster);
+
+              } else if (response == "True" && movie_poster == 'N/A') {
+
+                alert("Movie found but Poster is not available");
+
+                set_data(movie_data, "/Images/no_poster.gif");
+
+              } else {
+
+                showResult(false);
+
+              }
 
             }
 
-    }
+          }
 
-}
+        }
 
-function show_image(src, width, height, alt) {
+      }
 
-    var img = new Image();
+      function show_image(src, width, height, alt) {
 
-    img.src = src;
+        var img = new Image();
 
-    img.width = width;
+        img.src = src;
 
-    img.height = height;
+        img.width = width;
 
-    img.alt = alt;
+        img.height = height;
 
-    document.getElementById("poster").src = img.src;
+        img.alt = alt;
 
-}
+        document.getElementById("poster").src = img.src;
 
-function set_data(movie_data,movie_poster){
+      }
 
-    showResult(true);
+      function set_data(movie_data, movie_poster) {
 
-    show_image(movie_poster,400,400,"movie poster");
+        showResult(true);
 
-    document.getElementById("movie-title").innerHTML = "<b>Movie Title: </b>"+movie_data.Title;
+        show_image(movie_poster, 400, 400, "movie poster");
 
-    document.getElementById("title").innerHTML = movie_data.Title;
+        document.getElementById("movie-title").innerHTML = " < b > Movie Title: < /b>"+movie_data.Title;
 
-    document.getElementById("year").innerHTML = movie_data.Year;
+        document.getElementById("title").innerHTML = movie_data.Title;
 
-    document.getElementById("release-date").innerHTML = movie_data.Released;
+        document.getElementById("year").innerHTML = movie_data.Year;
 
-    document.getElementById("genre").innerHTML = movie_data.Genre;
+        document.getElementById("release-date").innerHTML = movie_data.Released;
 
-    document.getElementById("productions").innerHTML = movie_data.Production;
+        document.getElementById("genre").innerHTML = movie_data.Genre;
 
-    document.getElementById("director").innerHTML = movie_data.Director;
+        document.getElementById("productions").innerHTML = movie_data.Production;
 
-    document.getElementById("writer").innerHTML = movie_data.Writer;
+        document.getElementById("director").innerHTML = movie_data.Director;
 
-    document.getElementById("cast").innerHTML = movie_data.Actors;
+        document.getElementById("writer").innerHTML = movie_data.Writer;
 
-    document.getElementById("story").innerHTML = movie_data.Plot;
+        document.getElementById("cast").innerHTML = movie_data.Actors;
 
-    document.getElementById("language").innerHTML = movie_data.Language;
+        document.getElementById("story").innerHTML = movie_data.Plot;
 
-    document.getElementById("country").innerHTML = movie_data.Country;
+        document.getElementById("language").innerHTML = movie_data.Language;
 
-    document.getElementById("awards").innerHTML = movie_data.Awards;
+        document.getElementById("country").innerHTML = movie_data.Country;
 
-    document.getElementById("rating").innerHTML = movie_data.imdbRating;
+        document.getElementById("awards").innerHTML = movie_data.Awards;
 
-    document.getElementById("box-office").innerHTML = movie_data.BoxOffice;
+        document.getElementById("rating").innerHTML = movie_data.imdbRating;
 
-}
+        document.getElementById("box-office").innerHTML = movie_data.BoxOffice;
 
-function showResult(show)
+      }
 
-{
+      function showResult(show) {
 
-    if (show) {
+        if (show) {
 
-       document.getElementById("movie-table").style.display="table";
+          document.getElementById("movie-table").style.display = "table";
 
-       document.getElementById("movie_result").style.visibility = "hidden";
+          document.getElementById("movie_result").style.visibility = "hidden";
 
-       document.getElementById("movie_result").style.display = "none";
+          document.getElementById("movie_result").style.display = "none";
 
-    } else {
+        } else {
 
-       document.getElementById("movie-table").style.display="none";
+          document.getElementById("movie-table").style.display = "none";
 
-       document.getElementById("movie_result").style.display = "block";
+          document.getElementById("movie_result").style.display = "block";
 
-       document.getElementById("movie_result").style.visibility = "visible";
+          document.getElementById("movie_result").style.visibility = "visible";
 
-    }
+        }
 
-}
-        </script>
-        <title>Movie Finder</title>
-    </head>
-    <body>
-        
+      }
 
-        <!--Form-->
-        <form  onsubmit="return false" >
-            <!--Website Logo-->
-            <img id="web-logo">
-            <input type="text" placeholder="Enter the Movie name" id ="movie_name">
-            <button class="submit" type="submit" id="submit-button" onclick="find_movie();"> Search</button>
-            
-            <img id="movie_result">
-        </form>
+    </script>
 
-        <div id="movie_details">
-            <!--Movie Data Table-->
-            <table id="movie-table" style="display: none;">
-                <caption id="movie-title"></caption>
-                <tr>
-                    <th>Poster</th>
-                    <td id="image-data"><img id="poster" src=""></td>
-                </tr>
-                <tr>
-                    <th>Title</th>
-                    <td id="title"></td>
-                </tr>
-                <tr>
-                    <th>Year</th>
-                    <td id="year"></td>
-                </tr>
-                <tr>
-                    <th>Released on</th>
-                    <td id="release-date"></td>
-                </tr>
-                <tr>
-                    <th>Genre</th>
-                    <td id="genre"></td>
-                </tr>
-                <tr>
-                    <th>Productions</th>
-                    <td id="productions"></td>
-                </tr>
-                <tr>
-                    <th>Director</th>
-                    <td id="director"></td>
-                </tr>
-                <tr>
-                    <th>Writer</th>
-                    <td id="writer"></td>
-                </tr>
-                <tr>
-                    <th>Cast</th>
-                    <td id="cast"></td>
-                </tr>
-                <tr>
-                    <th>Story</th>
-                    <td id="story"></td>
-                </tr>
-                <tr>
-                    <th>Country</th>
-                    <td id="country"></td>
-                </tr>
-                <tr>
-                    <th>Language</th>
-                    <td id="language"></td>
-                </tr>
-                <tr>
-                    <th>Awards</th>
-                    <td id="awards"></td>
-                </tr>
-                <tr>
-                    <th>IMDB ID</th>
-                    <td id="imdb-id"></td>
-                </tr>
-                <tr>
-                    <th>IMDB Rating</th>
-                    <td id="rating"></td>
-                </tr>
-                <tr>
-                    <th>Box Office</th>
-                    <td id="box-office"></td>
-                </tr>
-            </table>
-        </div>
-    </body>
+    <title>Movie Finder</title>
+
+  </head>
+
+  <body>
+
+    <!--Form-->
+
+    <form onsubmit="return false">
+
+      <!--Website Logo-->
+
+      <img id="web-logo">
+
+      <input type="text" placeholder="Enter the Movie name" id="movie_name">
+
+      <button class="submit" type="submit" id="submit-button" onclick="find_movie();"> Search</button>
+
+      <img id="movie_result">
+
+    </form>
+
+    <div id="movie_details">
+
+      <!--Movie Data Table-->
+
+      <table id="movie-table" style="display: none;">
+
+        <caption id="movie-title"></caption>
+
+        <tr>
+
+          <th>Poster</th>
+
+          <td id="image-data">
+
+            <img id="poster" src="">
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <th>Title</th>
+
+          <td id="title"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Year</th>
+
+          <td id="year"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Released on</th>
+
+          <td id="release-date"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Genre</th>
+
+          <td id="genre"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Productions</th>
+
+          <td id="productions"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Director</th>
+
+          <td id="director"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Writer</th>
+
+          <td id="writer"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Cast</th>
+
+          <td id="cast"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Story</th>
+
+          <td id="story"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Country</th>
+
+          <td id="country"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Language</th>
+
+          <td id="language"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Awards</th>
+
+          <td id="awards"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>IMDB ID</th>
+
+          <td id="imdb-id"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>IMDB Rating</th>
+
+          <td id="rating"></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Box Office</th>
+
+          <td id="box-office"></td>
+
+        </tr>
+
+      </table>
+
+    </div>
+
+  </body>
+
 </html>
+    
+
+    
 
